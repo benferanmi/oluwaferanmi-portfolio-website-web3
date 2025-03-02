@@ -44,7 +44,7 @@ const Header = () => {
   const socialLinks = [
     { name: 'Github', icon: <Github size={20} />, url: 'https://github.com/benferanmi' },
     { name: 'Twitter', icon: <Twitter size={20} />, url: 'https://x.com/classicopa12?s=21' },
-    { name: 'Discord', icon: <Discord size={20} color={'#c8d2f2'} />, url: '' },
+    { name: 'Discord', icon: <Discord size={20} color={'#c8d2f2'} />, url: 'https://discord.gg/Mgb587nU' },
     { name: 'Telegram', icon: <Telegram size={20} color={"#c8d2f2"} />, url: 'https://t.me/ClassicOpa1234' }
 
   ];

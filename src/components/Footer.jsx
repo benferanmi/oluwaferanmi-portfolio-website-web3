@@ -8,7 +8,7 @@ const Footer = () => {
   const socialLinks = [
     { name: 'Github', icon: <Github size={18} />, url: 'https://github.com' },
     { name: 'Twitter', icon: <Twitter size={18} />, url: 'https://x.com/classicopa12?s=21' },
-    { name: 'Discord', icon: <Discord color={'#c8d2f2'}  size={18} />, url: '' },
+    { name: 'Discord', icon: <Discord color={'#c8d2f2'}  size={18} />, url: 'https://discord.gg/Mgb587nU' },
     { name: 'Telegram', icon: <Telegram  color={'#c8d2f2'} size={18} />, url: 'https://t.me/ClassicOpa1234' }
   ];
 

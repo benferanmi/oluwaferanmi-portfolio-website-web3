@@ -39,13 +39,13 @@ const AnimatedText = ({ staticText, phrases, interval = 3000 }) => {
   }, [displayText, currentIndex, phrases, isTyping]);
 
   return (
-    <div className="inline-flex items-center">
-      <span className="mr-2 text-web3-aqua">{staticText}</span>
-      <div className="relative h-[1.1em] min-w-[180px]">
+    <div className="md:inline-flex flex flex-col items-start w-full md:items-center">
+      <span className="mr-2 text-web3-aqua w-full block">{staticText}</span>
+      <div className="relative h-[2em] md:h-[1.1em] w-full md:min-w-[180px]">
         <AnimatePresence mode="wait">
           <motion.span
             key={currentIndex}
-            className="absolute inline-block text-web3-lemon whitespace-nowrap"
+            className="absolute inline-block text-web3-lemon text-wrap break-words md:whitespace-nowrap"
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}

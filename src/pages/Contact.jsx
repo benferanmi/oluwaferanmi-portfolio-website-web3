@@ -27,7 +27,7 @@ const Contact = () => {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_6eqipod', 'template_kgjoleb', e.target, 'CqqhX8DgdSYe1IMfL')
+    emailjs.sendForm('service_6eqipod', 'template_kgjoleb', formData, 'CqqhX8DgdSYe1IMfL')
       .then((result) => {
         console.log(result.text);
         setIsSubmitting(true);
@@ -56,27 +56,15 @@ const Contact = () => {
     {
       icon: <Mail size={24} />,
       title: 'Email',
-      value: 'classicferanmi1122003@gmail.com',
-      link: 'mailto:classicferanmi1122003@gmail.com'
-    },
-    {
-      icon: <Phone size={24} />,
-      title: 'Phone',
-      value: '+2348133252105',
-      link: 'tel:+2348133252105'
-    },
-    {
-      icon: <MapPin size={24} />,
-      title: 'Location',
-      value: 'Lagos Nigeria',
-      link: 'https://maps.google.com/?q=Lagos+Nigeria'
+      value: 'classicopa96@gmail.com',
+      link: 'mailto:classicopa96@gmail.com'
     }
   ];
 
   // Social links
   const socialLinks = [
     { name: 'Github', icon: <Github size={20} />, url: 'https://github.com/benferanmi' },
-    { name: 'Discord', icon: <Discord color={'#c8d2f2'} size={20} />, url: '' },
+    { name: 'Discord', icon: <Discord color={'#c8d2f2'} size={20} />, url: 'https://discord.gg/Mgb587nU' },
     { name: 'Twitter', icon: <Twitter size={20} />, url: 'https://x.com/classicopa12?s=21' },
     { name: 'Telegram', icon: <Telegram color={'#c8d2f2'} size={20} />, url: 'https://t.me/ClassicOpa1234' }
   ];

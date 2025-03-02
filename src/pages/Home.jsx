@@ -79,7 +79,7 @@ const Home = () => {
       <AnimatedBackground />
 
       {/* Hero Section */}
-      <section className="flex-grow flex items-center relative z-10 px-6 py-20">
+      <section className="flex-grow flex items-center relative z-10 px-6 py-80 md:py20 ">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-center">
             <motion.div
@@ -97,7 +97,7 @@ const Home = () => {
 
 
               <motion.h1
-                className="flex flex-row items-center text-3xl md:text-3xl lg:text-4xl font-bold mb-4 text-white leading-tight"
+                className="flex flex-col md:flex-row  items-center text-3xl md:text-3xl lg:text-4xl font-bold mb-4 text-white leading-tight"
                 variants={itemVariants}
               >
                 <AnimatedText staticText="I am" phrases={phrases} interval={3000} />
@@ -127,8 +127,8 @@ const Home = () => {
               </motion.div>
             </motion.div>
 
-            <div className="w-full md:w-1/2 relative h-[400px] md:h-[500px]">
-              <ThreeJSHero className="absolute inset-0" />
+            <div className="w-full md:w-1/2 relative h-[250px] md:h-[500px]">
+              <ThreeJSHero className="absolute inset-0 top-[-200px] left-[-50px] sm:left-0 md:top-0" />
             </div>
           </div>
         </div>
@@ -152,10 +152,10 @@ const Home = () => {
 
       {/* Decorative Elements */}
       <div className="absolute bottom-5 left-10 w-50 h-50 border-l-2 border-b-2 border-web3-aqua opacity-1 ">
-        <img src={assets.nftOne} alt='Oluwaferanmi nftOne'  className='p-2 w-[180px]' />
+        <img src={assets.nftOne} alt='Oluwaferanmi nftOne' className='p-2 w-[180px]' />
       </div>
-      <div className="absolute top-40 right-10 w-60 h-60 border-t-2 border-r-2 border-web3-lemon opacity-1">
-        <img src={assets.nftTwo} alt='Oluwaferanmi nftTwo' className='p-2 w-50'  />
+      <div className="absolute top-20 right-5 md:top-40 md:right-10 w-60 h-60 border-t-2 border-r-2 border-web3-lemon opacity-1">
+        <img src={assets.nftTwo} alt='Oluwaferanmi nftTwo' className='p-2 w-50' />
       </div>
     </div>
   );
